@@ -15,7 +15,7 @@
 		"nette/nette": "~2.1.0",
         "kukulich/fshl": "2.1.0",
         "tharos/leanmapper": "v2.1.0",
-        "dg/texy": "v2.3",
+        "dg/texy": "v2.3"
 	},
 	"require-dev": {
 		"nette/tester": "~0.9.5"
