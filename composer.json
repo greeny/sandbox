@@ -16,10 +16,8 @@
         "kukulich/fshl": "2.1.0",
         "tharos/leanmapper": "v2.1.0",
         "dg/texy": "v2.3",
-        "kdyby/bootstrap-form-renderer": "dev-master"
 	},
 	"require-dev": {
 		"nette/tester": "~0.9.5"
-	},
-    "version": "1.0.0"
+	}
 }

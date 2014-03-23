@@ -2,7 +2,6 @@
 
 namespace Sandbox;
 
-use Kdyby\BootstrapFormRenderer\BootstrapRenderer;
 use Sandbox\Templating\Helpers;
 use Sandbox\Controls\Form;
 use Nette\Application\UI\Presenter;
@@ -12,7 +11,6 @@ abstract class BasePresenter extends Presenter
 	public function createForm()
 	{
 		$form = new Form();
-		$form->setRenderer(new BootstrapRenderer());
 		return $form;
 	}
 
@@ -71,17 +69,5 @@ abstract class BasePresenter extends Presenter
 		} else {
 			$this->redirect('this', array('page' => $v->maxPage));
 		}
-	}
-
-	public function createComponentAForm()
-	{
-		$form = $this->createForm();
-		$form->addText('a', 'A');
-		$form->addTextArea('b', 'A');
-		$form->addPassword('c', 'A');
-		$form->addSelect('d', 'A', array(1,2,3));
-		$form->addPrimarySubmit('e', 'A');
-		$form->addSubmit('f', 'A');
-		return $form;
 	}
 }
