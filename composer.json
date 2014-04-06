@@ -12,11 +12,12 @@
 	],
 	"require": {
 		"php": ">= 5.3.0",
-		"nette/nette": "@dev",
+		"nette/nette": "2.3.*@dev",
         "tharos/leanmapper": "v2.1.0",
         "dg/texy": "v2.3"
 	},
 	"require-dev": {
 		"nette/tester": "~0.9.5"
-	}
+	},
+	"minimum-stability": "dev"
 }
