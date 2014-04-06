@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6ba0d0b4d42610ca9df3fe5c00ae08eb",
+    "hash": "657ce08cb98b9839c81283f719ec41f5",
     "packages": [
         {
             "name": "dg/texy",
@@ -113,107 +113,17 @@
             "time": "2013-10-16 19:39:29"
         },
         {
-            "name": "kdyby/bootstrap-form-renderer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Kdyby/BootstrapFormRenderer.git",
-                "reference": "b0f8131423281681023c6a4adf552006773e9b70"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/BootstrapFormRenderer/zipball/b0f8131423281681023c6a4adf552006773e9b70",
-                "reference": "b0f8131423281681023c6a4adf552006773e9b70",
-                "shasum": ""
-            },
-            "require": {
-                "nette/nette": "@dev"
-            },
-            "require-dev": {
-                "nette/tester": "@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Kdyby\\BootstrapFormRenderer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Filip Procházka",
-                    "homepage": "http://filip-prochazka.com"
-                }
-            ],
-            "description": "Nette forms renderer with bootstrap",
-            "homepage": "http://kdyby.org",
-            "keywords": [
-                "Forms",
-                "bootstrap",
-                "kdyby",
-                "nette"
-            ],
-            "time": "2013-12-26 21:28:47"
-        },
-        {
-            "name": "kukulich/fshl",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kukulich/fshl.git",
-                "reference": "974c294ade5d76c0c16b6fe3fd3a584ba999b24f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kukulich/fshl/zipball/974c294ade5d76c0c16b6fe3fd3a584ba999b24f",
-                "reference": "974c294ade5d76c0c16b6fe3fd3a584ba999b24f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "FSHL": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jaroslav Hanslík",
-                    "homepage": "https://github.com/kukulich"
-                }
-            ],
-            "description": "FSHL is a free, open source, universal, fast syntax highlighter written in PHP.",
-            "homepage": "http://fshl.kukulich.cz/",
-            "keywords": [
-                "highlight",
-                "library",
-                "syntax"
-            ],
-            "time": "2012-09-08 19:00:07"
-        },
-        {
             "name": "nette/nette",
-            "version": "v2.1.0",
+            "version": "2.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "e5af13a9d662972e9e34272771e52b832629bb91"
+                "reference": "46f44cdd615f64d58c2348fcc4a9cac108919c76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/e5af13a9d662972e9e34272771e52b832629bb91",
-                "reference": "e5af13a9d662972e9e34272771e52b832629bb91",
+                "url": "https://api.github.com/repos/nette/nette/zipball/46f44cdd615f64d58c2348fcc4a9cac108919c76",
+                "reference": "46f44cdd615f64d58c2348fcc4a9cac108919c76",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +132,7 @@
                 "php": ">=5.3.1"
             },
             "require-dev": {
-                "nette/tester": "~0.9.5"
+                "nette/tester": "~1.0.0"
             },
             "suggest": {
                 "ext-fileinfo": "*",
@@ -266,7 +176,7 @@
                 "mvc",
                 "templating"
             ],
-            "time": "2013-12-31 00:08:21"
+            "time": "2014-04-02 14:20:16"
         },
         {
             "name": "tharos/leanmapper",
@@ -367,7 +277,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kdyby/bootstrap-form-renderer": 20
+        "nette/nette": 20
     },
     "platform": {
         "php": ">= 5.3.0"
