@@ -8,16 +8,9 @@ use Nette\Application\UI\Form as NForm;
 use Nette\Forms\Controls;
 
 class Form extends NForm {
-	public function addPrimarySubmit($name, $caption = NULL)
-	{
-		return $this->addSubmit($name, $caption)
-			->setAttribute('class', 'btn-primary');
-	}
-
 	public function addTextArea($name, $label = NULL, $cols = NULL, $rows = NULL)
 	{
 		return parent::addTextArea($name, $label, $cols, $rows)
-			->setAttribute('class', 'span6')
 			->setAttribute('rows', 5);
 	}
 
@@ -47,5 +40,6 @@ class Form extends NForm {
 				$control->getSeparatorPrototype()->setName('div')->addClass($control->getControlPrototype()->type);
 			}
 		}
+		parent::render();
 	}
 }

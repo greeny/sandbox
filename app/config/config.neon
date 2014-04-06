@@ -23,8 +23,11 @@ nette:
 services:
 	connection:
 		class: LeanMapper\Connection( %database%, ... )
-	- LeanMapper\DefaultMapper
+	- Sandbox\Model\Mapper
 	- LeanMapper\DefaultEntityFactory
+
+	- Sandbox\Security\Authenticator
+	- Sandbox\Security\Authorizator
 
 	- Sandbox\Routing\RouterFactory
 	router: @Sandbox\Routing\RouterFactory::createRouter
