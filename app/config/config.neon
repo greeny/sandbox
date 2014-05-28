@@ -26,6 +26,8 @@ services:
 	- Sandbox\Model\Mapper
 	- LeanMapper\DefaultEntityFactory
 
+	- Sandbox\Model\UserRepository
+
 	- Sandbox\Security\Authenticator
 	- Sandbox\Security\Authorizator
 

@@ -6,7 +6,7 @@
 namespace Sandbox\Model;
 
 use LeanMapper\Entity;
-use Nette\ArrayHash;
+use Nette\Utils\ArrayHash;
 
 abstract class BaseEntity extends Entity {
 	/**
@@ -33,4 +33,3 @@ abstract class BaseEntity extends Entity {
 		}
 	}
 }
- 

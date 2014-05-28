@@ -5,7 +5,7 @@
 
 namespace Sandbox\Model;
 
-use Nette\ArrayHash;
+use Nette\Utils\ArrayHash;
 use Nette\Security\AuthenticationException;
 use Nette\Utils\Strings;
 use Sandbox\Security\PasswordHasher;
@@ -35,4 +35,3 @@ class UserRepository extends BaseRepository {
 	}
 
 }
- 
