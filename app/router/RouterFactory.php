@@ -1,22 +1,21 @@
 <?php
 
-namespace Sandbox\Routing;
+namespace App;
 
-use Nette\Application\Routers\RouteList;
+use Nette\Application\IRouter;
 use Nette\Application\Routers\Route;
+use Nette\Application\Routers\RouteList;
 
-/**
- * Router factory.
- */
+
 class RouterFactory
 {
 
 	/**
-	 * @return \Nette\Application\IRouter
+	 * @return IRouter
 	 */
-	public function createRouter()
+	public static function createRouter()
 	{
-		$router = new RouteList();
+		$router = new RouteList;
 		$router[] = new Route('<presenter>/<action>[/<id>]', array(
 			'module' => 'Public',
 			'presenter' => 'Dashboard',

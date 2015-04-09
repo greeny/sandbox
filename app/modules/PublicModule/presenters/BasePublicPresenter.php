@@ -7,7 +7,7 @@ namespace Sandbox\PublicModule;
 
 use Sandbox\BasePresenter;
 
-class BasePublicPresenter extends BasePresenter {
+abstract class BasePublicPresenter extends BasePresenter
+{
 
 }
- 

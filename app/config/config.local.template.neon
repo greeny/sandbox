@@ -1,9 +1,5 @@
-parameters:
-	database:
-		driver: mysqli
-		host: localhost
-		database:
+sandbox:
+	leanmapper:
 		username:
 		password:
-		profiler: TRUE
-		lazy: yes
+		database:

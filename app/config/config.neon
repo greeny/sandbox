@@ -1,35 +1,24 @@
-#
-# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
-#
-# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
 # http://nette.org/security-warning
-#
+
 parameters:
+
 
 php:
 	date.timezone: Europe/Prague
-	# zlib.output_compression: yes
 
-nette:
-	application:
-		errorPresenter: Error
-		mapping:
-			*: Sandbox\*Module\*Presenter
 
-	session:
-		expiration: 14 days
+application:
+	errorPresenter: Error
+	mapping:
+		*: Sandbox\*Module\*Presenter
 
+
+session:
+	expiration: 14 days
+
+extensions:
+	sandbox: Sandbox\DI\SandboxExtension
 
 services:
-	connection:
-		class: LeanMapper\Connection( %database%, ... )
-	- Sandbox\Model\Mapper
-	- LeanMapper\DefaultEntityFactory
-
-	- Sandbox\Model\UserRepository
-
-	- Sandbox\Security\Authenticator
-	- Sandbox\Security\Authorizator
-
-	- Sandbox\Routing\RouterFactory
-	router: @Sandbox\Routing\RouterFactory::createRouter
+	router: App\RouterFactory::createRouter
